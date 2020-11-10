@@ -1,6 +1,7 @@
 <template>
   <nav class="nav">
     <img src="../assets/logo.png" class="nav__image" alt="Nav logo" />
+
     <div class="nav__links">
       <router-link
         class="nav__link"
@@ -44,14 +45,15 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../styles/global.scss";
+
 .nav {
   height: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
 
   &__image {
-    width: 100px;
+    height: 100%;
   }
 
   &__link {
@@ -59,7 +61,7 @@ export default {
     text-decoration: none;
     padding: 5px 0;
     &--active {
-      border-bottom: 5px solid green;
+      border-bottom: 5px solid $plantGreen;
     }
   }
 }
