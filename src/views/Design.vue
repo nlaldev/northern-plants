@@ -1,25 +1,44 @@
 <template>
-  <div class="design">
+  <div class="design" data-aos="fade">
     <h1 class="design__heading">DESIGN</h1>
     <div class="design__content">
-      <img src="../assets/design.jpg" alt="" class="design__image" />
-      <p class="design__paragraph-quote">
-        “Northern Plants design team helped us transform our living and work
-        areas. We are very happy with their services”
-        <br />
-        <br />
-        -Krillin, Loyal Customer
-      </p>
-      <p class="design__paragraph">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-        necessitatibus mollitia aut eum error eveniet unde. Doloremque corporis
-        hic ad cumque repudiandae dolores soluta! Voluptatem obcaecati dolor
-        reprehenderit. Alias, quaerat! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Harum, necessitatibus mollitia aut eum error eveniet
-        unde. Doloremque corporis hic ad cumque repudiandae dolores soluta!
-        Voluptatem obcaecati dolor reprehenderit. Alias, quaerat!
-      </p>
-      <img src="../assets/t-shirt2.png" alt="" class="design__image" />
+      <div class="design__content-wrapper design__content-top">
+        <img src="../assets/design.jpg" alt="" class="design__image" />
+        <p
+          class="design__paragraph design__paragraph-quote"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
+          “Northern Plants design team helped us transform our living and work
+          areas. We are very happy with their services”
+          <br />
+          <br />
+          <span class="design__paragraph-quote-name">
+            -Krillin, Loyal Customer
+          </span>
+        </p>
+      </div>
+      <div class="design__content-wrapper design__content-bottom ">
+        <p
+          class="design__paragraph"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          perum rerore volor rerum hilligent odit, ut ab invendis et lacidestrum
+          volor maximax imusciis dolum quia disco si veliquam nobit escide num
+          ut ullenita sit fugit landi rest volorehene andam quam velit,
+          ilictiunt volupta corest, si dolupti onseriat lam ne sapitaquis
+          dignatia sa non re eos volor simus doctor. ilictiunt volupta corest,
+          simus doctor.
+        </p>
+        <img
+          src="../assets/t-shirt2.png"
+          alt=""
+          class="design__image"
+          data-aos="fade"
+          data-aos-duration="1500"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -41,38 +60,53 @@ export default {
   &__content {
     @include tablet {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
+    }
+  }
+  &__content-wrapper {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__content-bottom {
+    @include tablet {
+      margin: 70px 0;
     }
   }
   &__image {
     width: 100%;
     @include tablet {
-      max-width: 300px;
+      width: 50%;
     }
-    @include desktop {
-      max-width: 600px;
+  }
+  &__paragraph {
+    @include paragraph;
+    @include tablet {
+      width: 45%;
+      margin: 0;
     }
   }
   &__paragraph-quote {
     @include paragraph;
     @include montBold;
-    font-style: italic;
     color: $darkBlue;
+    font-style: italic;
+    font-size: 20px;
     @include tablet {
-      width: 50%;
+      font-size: 24px;
     }
     @include desktop {
       font-size: 32px;
     }
   }
-
-  &__paragraph {
-    @include paragraph;
-    @include tablet {
-      width: 50%;
-    }
+  &__paragraph-quote-name {
+    font-style: normal;
+    @include montBold;
+    color: $darkBlue;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template
-  ><div class="plants">
+  ><div class="plants" data-aos="fade">
     <h1 class="plants__heading">PLANTS</h1>
     <img
       src="../assets/plants.jpg"
@@ -7,7 +7,7 @@
       class="plants__image-primary"
     />
     <section class="plants__content">
-      <div class="plants__text">
+      <div class="plants__text" data-aos="fade-right" data-aos-duration="1500">
         <p class="plants__paragraph">
           dui. Phasellus nec sem in justo pellentesque facilisis. Etiam
           imperdiet imperdiet orci. Nunc nec neque.Suspendisse pulvinar, augue
@@ -44,6 +44,8 @@
         src="../assets/plants-2.jpg"
         alt="Plants-2"
         class="plants__image-secondary"
+        data-aos="fade-left"
+        data-aos-duration="1500"
       />
     </section>
   </div>

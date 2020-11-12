@@ -35,12 +35,15 @@
 }
 @mixin paragraph {
   font-family: "Times New Roman", Times, serif;
+  line-height: 24px;
   font-size: 18px;
   margin: 20px 0;
   @include tablet {
     font-size: 20px;
+    line-height: 28px;
   }
   @include desktop {
     font-size: 26px;
+    line-height: 36px;
   }
 }
