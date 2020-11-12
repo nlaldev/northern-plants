@@ -1,22 +1,11 @@
-// @font-face {
-//   font-family: "Avenir";
-//   src: url("../assets/fonts/avenir-next-lt-pro/avenir-next-lt-pro-regular.ttf");
-//   //   font-weight: lighter;
-// }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 
-// @font-face {
-//   font-family: "Avenir Next LT Pro";
-//   src: url("../assets/fonts/avenir-next-lt-pro/avenir-next-lt-pro-regular.ttf");
-//   font-weight: normal;
-// }
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1200px;
 
-// @font-face {
-//   font-family: "Avenir Next LT Pro";
-//   src: url("../assets/fonts/avenir-next-lt-pro/avenir-next-lt-pro-bold.ttf");
-//   font-weight: bold;
-// };
-
-$avenir: "Avenir";
+$montserrat: "Montserrat", sans-serif;
 $black: #191919;
+$offWhite: #e8e7e3;
 $plantGreen: #3ccd79;
 $darkBlue: #334a56;
+$lightBlue: #6996b2;

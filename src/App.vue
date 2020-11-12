@@ -25,5 +25,6 @@ export default {
   padding: 0;
   box-sizing: border-box;
   color: $black;
+  @include montReg;
 }
 </style>
