@@ -53,6 +53,11 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 0 5%;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1;
+  box-shadow: 1px 6px 6px 0px rgba($black, 0.1);
 
   &__image {
     height: 70%;
