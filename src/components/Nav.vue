@@ -1,11 +1,8 @@
 <template>
   <nav class="nav">
     <img src="../assets/logo.png" class="nav__image" alt="Nav logo" />
-    <i class="fas fa-bars nav__icon"></i>
 
     <div class="nav__links">
-      <i class="fas fa-times nav__close"></i>
-
       <router-link
         class="nav__link"
         exact
@@ -61,24 +58,24 @@ export default {
     height: 70%;
   }
 
-  &__icon {
-    font-size: 30px;
-    @include desktop {
-      display: none;
-    }
-  }
+  // &__icon {
+  //   font-size: 30px;
+  //   @include desktop {
+  //     display: none;
+  //   }
+  // }
 
   &__links {
-    display: none;
     @include desktop {
       display: flex;
     }
   }
 
   &__link {
-    margin: 0 5px;
+    // margin: 0 5px;
     text-decoration: none;
     padding: 5px 0;
+    font-size: 8px;
     &--active {
       border-bottom: 5px solid $plantGreen;
     }

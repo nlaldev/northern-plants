@@ -12,12 +12,20 @@
         cupiditate delectus at magnam. Illo laudantium et sit, inventore ea
         harum officia impedit sint sequi provident, exercitationem aspernatur
         atque repellat.
+        <br />
+        <br />
+        Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+        Maecenas nec odio et ante alter tincidunt tempus.
       </p>
       <p class="mission__paragraph">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
-        consequatur deserunt enim odit consectetur minima id accusantium nihil,
-        officiis soluta minus magnam necessitatibus animi molestiae. Hic
-        deserunt atque corrupti sunt.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eos
+        cupiditate delectus at magnam. Illo laudantium et sit, inventore ea
+        harum officia impedit sint sequi provident, exercitationem aspernatur
+        atque repellat.
+        <br />
+        <br />
+        Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+        Maecenas nec odio et ante alter tincidunt tempus.
       </p>
     </section>
   </div>
@@ -33,7 +41,7 @@ export default {
 @import "../styles/global.scss";
 
 .mission {
-  padding: 5%;
+  padding: $pagePadding;
   &__heading {
     @include pageHeading;
   }
@@ -41,13 +49,17 @@ export default {
     width: 100%;
   }
   &__text {
-    margin: 25px 0;
+    margin: 50px 0;
     @include tablet {
       display: flex;
+      justify-content: space-between;
     }
   }
   &__paragraph {
     @include paragraph;
+    @include tablet {
+      width: 45%;
+    }
   }
 }
 </style>
