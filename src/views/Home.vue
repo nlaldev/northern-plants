@@ -2,7 +2,7 @@
   <div class="home">
     <header class="header">
       <div class="header__overlay"></div>
-      <div class="header__text">
+      <div class="header__text" data-aos="fade" data-aos-duration="1000">
         <h1 class="header__heading">Northern Plants</h1>
         <h2 class="header__subheading">Nature Meets Design</h2>
       </div>
@@ -26,7 +26,7 @@ export default {
     background-position: center;
     height: 80vh;
     position: relative;
-    z-index: 1;
+    z-index: -1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +36,7 @@ export default {
 
     &__overlay {
       position: absolute;
-      z-index: -1;
+      z-index: -2;
       width: 100%;
       height: 100%;
       background: rgba($color: $darkBlue, $alpha: 0.9);

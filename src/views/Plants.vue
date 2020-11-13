@@ -7,7 +7,7 @@
       class="plants__image-primary"
     />
     <section class="plants__content">
-      <div class="plants__text" data-aos="fade-right" data-aos-duration="1500">
+      <div class="plants__text" data-aos="fade-right">
         <p class="plants__paragraph">
           dui. Phasellus nec sem in justo pellentesque facilisis. Etiam
           imperdiet imperdiet orci. Nunc nec neque.Suspendisse pulvinar, augue
@@ -41,11 +41,10 @@
         </p>
       </div>
       <img
-        src="../assets/plants-2.jpg"
+        src="../assets/plants2.jpg"
         alt="Plants-2"
         class="plants__image-secondary"
         data-aos="fade-left"
-        data-aos-duration="1500"
       />
     </section>
   </div>

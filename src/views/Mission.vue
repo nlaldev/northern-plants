@@ -1,13 +1,9 @@
 <template>
-  <div class="mission">
+  <div class="mission" data-aos="fade">
     <h1 class="mission__heading">MISSION</h1>
-    <img
-      src="../assets/mission-image.jpg"
-      alt="Mission"
-      class="mission__image"
-    />
+    <img src="../assets/mission.jpg" alt="Mission" class="mission__image" />
     <section class="mission__text">
-      <p class="mission__paragraph">
+      <p class="mission__paragraph" data-aos="fade-right">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eos
         cupiditate delectus at magnam. Illo laudantium et sit, inventore ea
         harum officia impedit sint sequi provident, exercitationem aspernatur
@@ -17,7 +13,7 @@
         Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
         Maecenas nec odio et ante alter tincidunt tempus.
       </p>
-      <p class="mission__paragraph">
+      <p class="mission__paragraph" data-aos="fade-left">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eos
         cupiditate delectus at magnam. Illo laudantium et sit, inventore ea
         harum officia impedit sint sequi provident, exercitationem aspernatur

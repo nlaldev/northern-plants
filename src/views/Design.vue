@@ -7,7 +7,6 @@
         <p
           class="design__paragraph design__paragraph-quote"
           data-aos="fade-left"
-          data-aos-duration="1500"
         >
           “Northern Plants design team helped us transform our living and work
           areas. We are very happy with their services”
@@ -19,11 +18,7 @@
         </p>
       </div>
       <div class="design__content-wrapper design__content-bottom ">
-        <p
-          class="design__paragraph"
-          data-aos="fade-right"
-          data-aos-duration="1500"
-        >
+        <p class="design__paragraph" data-aos="fade-right">
           perum rerore volor rerum hilligent odit, ut ab invendis et lacidestrum
           volor maximax imusciis dolum quia disco si veliquam nobit escide num
           ut ullenita sit fugit landi rest volorehene andam quam velit,
@@ -36,7 +31,6 @@
           alt=""
           class="design__image"
           data-aos="fade"
-          data-aos-duration="1500"
         />
       </div>
     </div>
