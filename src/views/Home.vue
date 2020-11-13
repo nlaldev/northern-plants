@@ -24,16 +24,11 @@ export default {
     background: url("../assets/hero.jpg");
     background-size: cover;
     background-position: center;
-    height: 80vh;
     position: relative;
     z-index: -1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @include desktop {
-      height: 50vw;
-    }
-
     &__overlay {
       position: absolute;
       z-index: -2;
@@ -41,15 +36,13 @@ export default {
       height: 100%;
       background: rgba($color: $darkBlue, $alpha: 0.9);
     }
-
     &__text {
       margin-left: 4%;
+      padding: 35vh 0;
     }
-
     &__text > * {
-      color: white;
+      color: $white;
     }
-
     &__heading {
       font-size: 3rem;
       @include tablet {
@@ -59,7 +52,6 @@ export default {
         font-size: 6rem;
       }
     }
-
     &__subheading {
       margin-top: 50px;
       font-size: 1.5rem;

@@ -21,7 +21,7 @@ export default {
   align-items: center;
 
   &__text {
-    color: white;
+    color: $white;
   }
 }
 </style>

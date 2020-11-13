@@ -1,8 +1,11 @@
 <template>
   <nav class="nav">
     <img src="../assets/logo.png" class="nav__image" alt="Nav logo" />
-    <i class="fas fa-bars  nav__hamburger" @click="changeIcon"></i>
-    <div class="nav__links" :class="{ active: isBurgerActive }">
+    <i class="fas fa-bars  nav__hamburger" @click="toggleMenu"></i>
+    <div
+      class="nav__links"
+      :class="{ active: isBurgerActive, notActive: !isBurgerActive }"
+    >
       <router-link
         class="nav__link"
         exact
@@ -47,9 +50,8 @@ export default {
     };
   },
   methods: {
-    changeIcon() {
+    toggleMenu() {
       this.isBurgerActive = !this.isBurgerActive;
-      console.log(this.isBurgerActive);
     },
   },
 };
@@ -57,7 +59,14 @@ export default {
 
 <style lang="scss">
 @import "../styles/global.scss";
-
+@keyframes slideIn {
+  from {
+    margin-left: -200px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
 .nav {
   height: 80px;
   display: flex;
@@ -92,6 +101,7 @@ export default {
     background: $darkBlue;
     border-radius: 0 5px 5px 0;
     z-index: 1;
+    animation: slideIn 0.3s linear;
   }
   &__links {
     display: none;
@@ -100,7 +110,7 @@ export default {
     }
   }
   &__link {
-    color: white;
+    color: $white;
     text-decoration: none;
     padding: 5px 0;
     &--active {

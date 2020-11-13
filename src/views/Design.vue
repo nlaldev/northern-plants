@@ -4,10 +4,7 @@
     <div class="design__content">
       <div class="design__content-wrapper design__content-top">
         <img src="../assets/design.jpg" alt="" class="design__image" />
-        <p
-          class="design__paragraph design__paragraph-quote"
-          data-aos="fade-left"
-        >
+        <p class="design__paragraph design__paragraph-quote">
           “Northern Plants design team helped us transform our living and work
           areas. We are very happy with their services”
           <br />
@@ -17,8 +14,11 @@
           </span>
         </p>
       </div>
-      <div class="design__content-wrapper design__content-bottom ">
-        <p class="design__paragraph" data-aos="fade-right">
+      <div
+        class="design__content-wrapper design__content-bottom"
+        data-aos="fade"
+      >
+        <p class="design__paragraph">
           perum rerore volor rerum hilligent odit, ut ab invendis et lacidestrum
           volor maximax imusciis dolum quia disco si veliquam nobit escide num
           ut ullenita sit fugit landi rest volorehene andam quam velit,
@@ -26,12 +26,7 @@
           dignatia sa non re eos volor simus doctor. ilictiunt volupta corest,
           simus doctor.
         </p>
-        <img
-          src="../assets/t-shirt2.png"
-          alt=""
-          class="design__image"
-          data-aos="fade"
-        />
+        <img src="../assets/t-shirt2.png" alt="" class="design__image" />
       </div>
     </div>
   </div>
@@ -64,11 +59,7 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
-  }
-  &__content-bottom {
-    @include tablet {
-      margin: 70px 0;
+      margin: 5vh 0;
     }
   }
   &__image {

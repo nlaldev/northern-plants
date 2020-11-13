@@ -35,6 +35,9 @@ export default {
   padding: $pagePadding;
   background: $offWhite;
   height: 100vh;
+  @include tablet {
+    padding: 15vh 5%;
+  }
   &__heading {
     @include pageHeading;
   }
